@@ -1,0 +1,15 @@
+{"problem": {
+	"name": "obstacle-rough"},
+ "sampling":{
+ 	"distribution": "uniform",
+	"strategy": "random"},
+ "expansion":{
+ 	"type": "rough_obstacle",
+	"obstacle_parameters": false
+	},
+ "fe":{
+	"mesh": 5,
+	"degree": 1,
+	"levels": 3
+    }
+ }

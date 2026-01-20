@@ -1,0 +1,17 @@
+{"problem": {
+	"name": "darcy"},
+ "sampling":{
+ 	"distribution": "uniform",
+	"strategy": "random"},
+ "expansion":{
+ 	"type": "karhunen_loeve",
+ 	"size": 10,
+ 	"mean": 1,
+ 	"scale": 0.1,
+ 	"decay rate": 2},
+ "fe":{
+	"mesh": 5,
+	"degree": 1,
+	"levels": 3
+    }
+ }

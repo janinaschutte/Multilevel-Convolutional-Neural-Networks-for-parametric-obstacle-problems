@@ -1,0 +1,20 @@
+{"problem": {
+	"name": "darcy"},
+ "sampling":{
+ 	"distribution": "uniform",
+	"strategy": "random"},
+ "expansion":{
+ 	"type": "cookie",
+ 	"size": 4,
+ 	"mean": 0.1,
+ 	"min_radius": 0.5,
+ 	"max_radius": 0.9,
+ 	"fixed_radii": true,
+ 	"fixed_radius": 0.6},
+ "fe":{
+	"mesh": 5,
+	"degree": 1,
+	"levels": 3
+    }
+ }
+
