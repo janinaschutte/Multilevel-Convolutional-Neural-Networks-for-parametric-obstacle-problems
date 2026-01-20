@@ -10,8 +10,6 @@ code/FinalConvModel/Tests/*
 code/FinalConvModel/Images/*
 !code/FinalConvModel/Images/.gitkeep
 
-code/FinalLinearModel/*.out
-
 code/DarcyAccuracyTest/
 code/FinalLinearModel/
 code/MakeFigures/
