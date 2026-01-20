@@ -2,7 +2,7 @@
 
 This repository contains code for the paper:
 
-M. Eigel, C. Heiß, and J. E. Sch¨utte. Multi-level neural networks for high-dimensional parametric obstacle problems, 2025
+M. Eigel, C. Heiß, and J. E. Schütte. Multi-level neural networks for high-dimensional parametric obstacle problems, 2025
 
 
 ## Setting up the environment
