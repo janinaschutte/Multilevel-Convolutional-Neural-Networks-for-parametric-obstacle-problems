@@ -1,5 +1,4 @@
 import numpy as np
-import torch
 from dolfin import *
 import time
 from tqdm import tqdm
@@ -46,6 +45,7 @@ def build_problem(problem, param_dimension, num_corrections, obstacle_parameter,
         problem_info_dict = load_problem_info_dict(problem_info)
         problem_info_dict['sampling']['distribution'] = "uniform"
         problem_info_dict['expansion']['size'] = param_dimension
+        problem_info_dict['expansion']['obstacle_parameters'] = obstacle_parameter
     else:
         raise NotImplementedError()
 
@@ -227,18 +227,20 @@ if __name__ == "__main__":
     # num_levels=3#7
     # build_data_set('obstacle', 11, num_levels, 10000, 1024, 1024, True, True, './code/FinalConvModel/Data/obstacle11variable')
 
-    # # on leonhard-12 pid 34097
+    # # on leonhard-12 pid 77366
     # y_dim = 220
     # num_levels=7
-    # build_data_set('obstacle-rough', y_dim, num_levels,10000,1024,1024, False, True, './code/FinalConvModel/Data/obstacle220rough_')# 10000, 1024, 1024
+    # build_data_set('obstacle-rough', y_dim, num_levels,10000,1024,1024, True, True, './code/FinalConvModel/Data/obstacle220rough_')# 10000, 1024, 1024
 
+    # leonhard-13 pid 2206
     # y_dim = 50
     # num_levels=7
-    # build_data_set('obstacle-rough', y_dim, num_levels,10000,1024,1024, False, True, './code/FinalConvModel/Data/obstacle50rough')# 10000, 1024, 1024
+    # build_data_set('obstacle-rough', y_dim, num_levels,10000,1024,1024, True, True, './code/FinalConvModel/Data/obstacle50rough')# 10000, 1024, 1024
 
+    # leonhard-14 pid 126988
     y_dim = 100
     num_levels=7
-    build_data_set('obstacle-rough', y_dim, num_levels, 10000, 1024, 1024, False, True, './code/FinalConvModel/Data/obstacle100rough')
+    build_data_set('obstacle-rough', y_dim, num_levels, 10000, 1024, 1024, True, True, './code/FinalConvModel/Data/obstacle100rough')
 
     print('Done!')
 
