@@ -44,7 +44,7 @@ class MultiLevelRefinementSampler():
         if overwrite_levels is not None:
             problemInfo['fe']['levels'] = overwrite_levels
 
-        if problemInfo['problem']['name'] == 'obstacle':
+        if problemInfo['problem']['name'] == 'obstacle' or problemInfo['problem']['name'] == 'obstacle-rough':
             self.is_obstacle_parameter = problemInfo['expansion']['obstacle_parameters']
         else:
             self.is_obstacle_parameter = False
